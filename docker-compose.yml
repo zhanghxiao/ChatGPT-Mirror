@@ -29,13 +29,7 @@ services:
     depends_on:
       - redis
     environment:
-      - REDIS_URL=redis://redis:6379/0
-
-  redis:
-    image: redis:latest
-    restart: always
-    # ports:
-    #   - "127.0.0.1:6379:6379"
+      - REDIS_URL=redis://106.15.184.28:6379/0
 
   watchtower:
     image: containrrr/watchtower
